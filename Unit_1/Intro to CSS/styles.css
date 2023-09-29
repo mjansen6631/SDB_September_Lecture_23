@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6{text-decoration: underline;}
 /* change all of my h tags at the same time */
 /* Compound Selector: it is more than a single selector in one rule */
 /* change a specific tag by selecting an ID */
-/* to select an ID. I must use a a number sign a.k.a hastag */
+/* to select an ID. I must use a a number sign a.k.a hashtag */
 #unique{
     text-decoration: underline overline;
     background-color: pink;
