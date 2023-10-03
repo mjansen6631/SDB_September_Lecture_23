@@ -51,7 +51,7 @@ for (let i=0; i < firstName.length; i++ ) {
 
 let sum = 0;
 
-console.log('Sum equals ${sum} before the loop.')
+console.log(`Sum equals ${sum} before the loop.`)
 
 for ( let i=1; i <= 5; i++) {
     console.log("Before:" , sum);
@@ -141,8 +141,8 @@ let dogArray = [
 for ( doggo of dogArray){
     // Use an if conditional to make a separate console.log for Husky
     if (doggo === "Husky"){
-        console.log ('I think the ${doggo} is yelling/screaming for his breakfast.')
+        console.log (`I think the ${doggo} is yelling/screaming for his breakfast.`)
     } else {
-        console.log('The ${doggo} is sitting there quietly.')
+        console.log(`The ${doggo} is sitting there quietly.`)
     } 
 }
