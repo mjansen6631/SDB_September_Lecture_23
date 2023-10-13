@@ -36,7 +36,7 @@ for (i=10; i>=0; i--){
 
 // If using a straight return (one item is returning from a statement): We don't need to use curly brackets.
 
-for( i = 5; i >=0; i--) console.log(i);
+for( i = 5; i >=0; i--) console.log(i);     
 
 // Spell out a word letter for letter 
 let firstName = "Michael";
