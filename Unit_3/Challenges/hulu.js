@@ -40,59 +40,58 @@ let hulu = {
     id: 1,
     movies: [
         {
-            title: `The Dark Knight`,
-            genre:  [`Action`, `Crime`, `Drama`],
-            rating: `PG-13`,
+            title: 'The Dark Knight',
+            genre: ['Action','Crime','Drama'],
+            rating: 'PG-13',
             run_time: 152,
             year_released: 2008
-        }, {
-            title: `The Green Mile`,
-            genre:  [`Fantasy`, `Crime`, `Drama`],
-            rating: `R`,
+        },
+        {
+            title: 'The Green Mile',
+            genre: ['Fantasy','Crime','Drama'],
+            rating: 'R',
             run_time: 189,
             year_released: 1999
         },
     ],
     shows: [
         {
-            title: `Bobs Burgers`,
+            title: 'Bobs Burgers',
             numberOfSeasons: 13,
-            seasons: [{
-                season: 1,
-                no_episodes: 13, 
-                episodes: [{
-                    title:"Human Flesh",
-                    air_date: `01-09-2011`,
+            seasons: [
+                {
+                    season: 1,
+                    no_episodes: 13,
+                    episodes: [
+                        {
+                            title: "Human Flesh",
+                            air_date: '01-09-2011',
+                        },
+                        {
+                            title: "Crawl Space",
+                            air_date: "01-16-2011"
+                        },
+                    ] 
                 },
                 {
-                    title: "Crawl Space",
-                    air_date: "01-16-2011"
-                },
+                    season: 2,
+                    no_episodes: 9,
+                    episodes: [
+                        {
+                            title: "The Belchies",
+                            air_date: '03-11-2012',
+                        },
+                        {
+                            title: "Bob Day Afternoon",
+                            air_date: "03-18-2012"
+                        },
+                    ] 
+                }
             ]
-        },
-        {
-            season: 2,
-            no_episodes: 9,
-            
         }
-        ]
-    },
-    {
-        title: `Bobs Burgers`,
-        numberOfSeasons: 13,
-        seasons: [{
-            season: 1,
-            no_episodes: 13, 
-            episodes: [{
-                title:"Human Flesh",
-                air_date:   ``,
-            }]
-    }
-    ]
-}   
-    ]
-    }   
+    ],
+}
 
-    console.log(hulu.movies);
-    console.log(hulu.shows[0].title);
-    console.log(hulu.shows[0].seasons[1].episodes[0].title);
+// console.log(hulu.movies);
+// console.log(hulu.shows[0].title);
+console.log(hulu.shows[0].seasons[1].episodes[0].title);
