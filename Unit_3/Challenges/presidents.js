@@ -56,11 +56,27 @@ const presidents = [
 */
 
 console.log(presidents.length);
-let undefined = () => {
 
-};
-console.log(presidents.undefined)
-let passed = () => {
+let alivePresidents = presidents.filter(president => {
+    if (president.passed === undefined){
+        return true;
+    } else {
+        return false;
+    }
+});
+console.log(alivePresidents);
 
-}
-console.log(presidents.passed);
+let deadPresidents = presidents.filter(president => {
+    if (president.passed !== undefined){
+        return true;
+    } else {
+        return false;
+    }
+});
+console.log(deadPresidents);
+
+deadPresidents.forEach(president => {
+    console.log(president.first);
+    console.log(president.last);
+    console.log(president.passed - president.year);
+});
